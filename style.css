@@ -1,0 +1,132 @@
+
+/* 全域設定 */
+body {
+    text-align: left;  /* 將整體文字靠左 */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header 設定 */
+header {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+header h1 {
+    text-align: center;  /* 讓標題居中 */
+    margin-bottom: 15px;
+}
+/* 樣式化 nav */
+nav {
+    background-color: #333; /* 導航背景色 */
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* 樣式化 ul */
+nav ul {
+    list-style: none; /* 移除項目符號 */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* 置中 */
+}
+
+/* 樣式化 li */
+nav ul li {
+    margin: 0 15px; /* 每個選項之間的間距 */
+}
+
+/* 樣式化 a */
+nav ul li a {
+    color: white; /* 文字顏色 */
+    text-decoration: none; /* 移除底線 */
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* 漸變效果 */
+}
+
+/* 滑過效果 */
+nav ul li a:hover {
+    color: #ff9800; /* 滑過時文字顏色 */
+}
+
+
+header p {
+    text-align: left;  /* 段落文字靠左 */
+}
+
+/* 使按鈕樣式醒目 */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Main 內容區域 */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Hat Gallery 設定，每行顯示三個帽子 */
+.hat-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 每行 3 列 */
+    gap: 20px;  /* 調整每個帽子之間的間距 */
+    padding: 20px;
+}
+
+/* 每個帽子容器設定 */
+.hat-item {
+    width: 100%;  /* 適應父容器的寬度 */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 帽子圖片設定 */
+.hat-item img {
+    width: 100%;    /* 讓圖片寬度適應父容器 */
+    aspect-ratio: 16/9;  /* 保持圖片的16:9比例 */
+    object-fit: cover;  /* 確保圖片適應容器，並保持中心 */
+    transition: transform 0.3s ease;
+}
+
+.hat-item img:hover {
+    transform: scale(1.05);  /* 增加圖片放大效果 */
+}
+
+/* 標籤樣式 */
+.hat-label {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+/* 容器設定，允許每行顯示三個容器 */
+.container {
+    width: calc(100% / 3);  /* 每行三個容器 */
+    box-sizing: border-box;
+    padding: 10px;  /* 可選擇加入間距 */
+    float: left;  /* 將容器水平排列 */
+}
+

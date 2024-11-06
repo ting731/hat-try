@@ -1,0 +1,132 @@
+/* 全局樣式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 0 20px;
+}
+
+header {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 1.5em;
+}
+
+header .menu {
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 主內容樣式 */
+main {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.member-login, .member-benefits, .member-support {
+    margin-bottom: 20px;
+}
+
+.member-login h2,
+.member-benefits h3,
+.member-support h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.member-login form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.member-login input[type="email"],
+.member-login input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.member-login button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.member-login button:hover {
+    background-color: #555;
+}
+
+/* 會員優惠樣式 */
+.member-benefits ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+/* 會員客服樣式 */
+.member-support p {
+    margin-top: 5px;
+}
+
+/* 頁腳樣式 */
+footer {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    margin-top: 30px;
+    border-top: 1px solid #444;
+}
+
+footer p {
+    font-size: 0.9em;
+}

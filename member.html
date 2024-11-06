@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員專區 - 帽子魔法館</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header>
+        <button class="menu">&#9776;</button>
+        <h1>帽子魔法館</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="hats.html">帽子試戴</a></li>
+                <li><a href="member.html">會員專區</a></li>                  
+            </ul>
+        </nav>  
+    </header>   
+    <main>
+        <section class="member-login">
+            <h2>會員登入</h2>
+            <form action="login_process.html" method="post">
+                <label for="email">Email：</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">密碼：</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">登入</button>
+            </form>
+            <p>還不是會員嗎？<a href="signup.html">立即註冊</a></p>
+        </section>
+
+        <section class="member-benefits">
+            <h3>會員專屬優惠</h3>
+            <p>加入帽子魔法館會員，享有以下專屬權益：</p>
+            <ul>
+                <li>會員專屬折扣</li>
+                <li>第一手新品消息</li>
+                <li>生日優惠</li>
+                <li>線上購物積分回饋</li>
+            </ul>
+        </section>
+        
+        <section class="member-support">
+            <h3>會員客服</h3>
+            <p>有任何疑問？請聯繫我們的客服團隊，我們將竭誠為您服務。</p>
+            <p>Email: support@magic-hats.com</p>
+            <p>電話: 1234-5678</p>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2023 帽子魔法館 All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
